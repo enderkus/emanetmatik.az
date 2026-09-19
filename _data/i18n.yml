@@ -79,6 +79,16 @@ az:
     extra_daily_prefix: "Sonra hər"
     extra_daily_suffix: "saat:"
 
+  calculator:
+    title: "Sürətli Qiymət Hesabla"
+    size_label: "Dolab ölçüsü"
+    hours_label: "Müddət (saat)"
+    result_label: "Təxmini qiymət"
+    over_limit: "12 saatdan çox müddət üçün zəhmət olmasa bizimlə əlaqə saxlayın."
+    size_kicik: "Kiçik"
+    size_orta: "Orta"
+    size_boyuk: "Böyük"
+
   faq:
     eyebrow: "Tez-tez Verilən Suallar"
     title: "Sualınız Var? Cavabı Burada"
@@ -95,6 +105,10 @@ az:
     contact_title: "Əlaqə"
     address: "Bakı, Azərbaycan"
     rights: "Bütün hüquqlar qorunur."
+    privacy_link: "Gizlilik Siyasəti"
+    terms_link: "İstifadə Şərtləri"
+    privacy_url: "/gizlilik-siyaseti/"
+    terms_url: "/istifade-sertleri/"
 
 en:
   nav:
@@ -177,6 +191,16 @@ en:
     extra_daily_prefix: "After that, every"
     extra_daily_suffix: "hours:"
 
+  calculator:
+    title: "Quick Price Estimate"
+    size_label: "Locker size"
+    hours_label: "Duration (hours)"
+    result_label: "Estimated price"
+    over_limit: "For durations over 12 hours, please contact us."
+    size_kicik: "Small"
+    size_orta: "Medium"
+    size_boyuk: "Large"
+
   faq:
     eyebrow: "Frequently Asked Questions"
     title: "Have a Question? Find the Answer Here"
@@ -193,3 +217,7 @@ en:
     contact_title: "Contact"
     address: "Baku, Azerbaijan"
     rights: "All rights reserved."
+    privacy_link: "Privacy Policy"
+    terms_link: "Terms of Use"
+    privacy_url: "/en/privacy-policy/"
+    terms_url: "/en/terms-of-use/"

@@ -42,6 +42,57 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // Price calculator
+  var calcBox = document.getElementById('price-calculator');
+  var updateCalculator = null;
+  if (calcBox) {
+    var calcDataEl = document.getElementById('price-calculator-data');
+    var pricing = JSON.parse(calcDataEl.textContent);
+    var sizeSelect = document.getElementById('calc-size');
+    var hoursInput = document.getElementById('calc-hours');
+    var resultValue = document.getElementById('calc-result-value');
+    var noteEl = document.getElementById('calc-note');
+
+    var getActiveScheme = function () {
+      var activeTab = document.querySelector('.pricing-tab.is-active');
+      return activeTab ? activeTab.getAttribute('data-target') : 'mall';
+    };
+
+    updateCalculator = function () {
+      var scheme = getActiveScheme();
+      var sizeId = sizeSelect.value;
+      var hours = parseInt(hoursInput.value, 10);
+      noteEl.textContent = '';
+
+      if (!hours || hours < 1) {
+        resultValue.textContent = '— AZN';
+        return;
+      }
+
+      if (scheme === 'mall') {
+        var mallPlan = pricing.mall.plans.filter(function (p) { return p.id === sizeId; })[0];
+        var tierIndex = hours <= 4 ? 0 : hours <= 8 ? 1 : hours <= 12 ? 2 : -1;
+        if (tierIndex === -1 || !mallPlan) {
+          resultValue.textContent = '— AZN';
+          noteEl.textContent = noteEl.getAttribute('data-over-limit');
+        } else {
+          resultValue.textContent = mallPlan.prices[tierIndex] + ' AZN';
+        }
+      } else {
+        var icPlan = pricing.icherisheher.plans.filter(function (p) { return p.id === sizeId; })[0];
+        if (!icPlan) { resultValue.textContent = '— AZN'; return; }
+        var extraHours = Math.max(0, hours - icPlan.base_hours);
+        var blocks = Math.ceil(extraHours / pricing.icherisheher.extra_block_hours);
+        var price = icPlan.base_price + (blocks * pricing.icherisheher.extra_block_price);
+        resultValue.textContent = price + ' AZN';
+      }
+    };
+
+    sizeSelect.addEventListener('change', updateCalculator);
+    hoursInput.addEventListener('input', updateCalculator);
+    updateCalculator();
+  }
+
   // Pricing tabs
   var pricingTabs = document.querySelectorAll('.pricing-tab');
   if (pricingTabs.length) {
@@ -57,6 +108,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.pricing-panel').forEach(function (panel) {
           panel.classList.toggle('is-active', panel.getAttribute('data-panel') === target);
         });
+
+        if (updateCalculator) { updateCalculator(); }
       });
     });
   }

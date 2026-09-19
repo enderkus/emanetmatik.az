@@ -1,18 +1,29 @@
 {% assign t = site.data.i18n[page.lang] %}
+{% assign home_url = '/' | relative_url %}
+{% if page.lang == 'en' %}{% assign home_url = '/en/' | relative_url %}{% endif %}
+{% assign az_url = '/' %}
+{% assign en_url = '/en/' %}
+{% if page.lang == 'az' %}
+  {% assign az_url = page.url %}
+  {% if page.alt_url %}{% assign en_url = page.alt_url %}{% endif %}
+{% else %}
+  {% assign en_url = page.url %}
+  {% if page.alt_url %}{% assign az_url = page.alt_url %}{% endif %}
+{% endif %}
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a href="{{ '/' | relative_url }}#top" class="brand">
+    <a href="{{ home_url }}#top" class="brand">
       <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.company.name }}" class="brand-logo">
     </a>
 
     <nav class="main-nav" id="main-nav">
       <ul>
-        <li><a href="#niye-biz" class="nav-link">{{ t.nav.niye_biz }}</a></li>
-        <li><a href="#nece-isleyir" class="nav-link">{{ t.nav.nece_isleyir }}</a></li>
-        <li><a href="#lokasiyalar" class="nav-link">{{ t.nav.lokasiyalar }}</a></li>
-        <li><a href="#qiymetler" class="nav-link">{{ t.nav.qiymetler }}</a></li>
-        <li><a href="#sss" class="nav-link">{{ t.nav.sss }}</a></li>
-        <li><a href="#elaqe" class="nav-link">{{ t.nav.elaqe }}</a></li>
+        <li><a href="{{ home_url }}#niye-biz" class="nav-link">{{ t.nav.niye_biz }}</a></li>
+        <li><a href="{{ home_url }}#nece-isleyir" class="nav-link">{{ t.nav.nece_isleyir }}</a></li>
+        <li><a href="{{ home_url }}#lokasiyalar" class="nav-link">{{ t.nav.lokasiyalar }}</a></li>
+        <li><a href="{{ home_url }}#qiymetler" class="nav-link">{{ t.nav.qiymetler }}</a></li>
+        <li><a href="{{ home_url }}#sss" class="nav-link">{{ t.nav.sss }}</a></li>
+        <li><a href="{{ home_url }}#elaqe" class="nav-link">{{ t.nav.elaqe }}</a></li>
       </ul>
     </nav>
 
@@ -22,10 +33,10 @@
         <span>{{ site.company.phone }}</span>
       </a>
       <div class="lang-switch" role="group" aria-label="Language">
-        <a href="{{ '/' | relative_url }}" class="lang-btn{% if page.lang == 'az' %} is-active{% endif %}">AZ</a>
-        <a href="{{ '/en/' | relative_url }}" class="lang-btn{% if page.lang == 'en' %} is-active{% endif %}">EN</a>
+        <a href="{{ az_url | relative_url }}" class="lang-btn{% if page.lang == 'az' %} is-active{% endif %}">AZ</a>
+        <a href="{{ en_url | relative_url }}" class="lang-btn{% if page.lang == 'en' %} is-active{% endif %}">EN</a>
       </div>
-      <a href="#lokasiyalar" class="btn btn-primary btn-sm">{{ t.nav.lokasiyalar }}</a>
+      <a href="{{ home_url }}#lokasiyalar" class="btn btn-primary btn-sm">{{ t.nav.lokasiyalar }}</a>
     </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="{{ t.misc.nav_toggle_label }}" aria-expanded="false" aria-controls="main-nav">

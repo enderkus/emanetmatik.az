@@ -157,6 +157,31 @@
       <button type="button" class="pricing-tab" data-target="icherisheher" role="tab" aria-selected="false">{{ pricing.icherisheher.label }}</button>
     </div>
 
+    <!-- Qiymet Hesablayicisi -->
+    <div class="price-calculator" id="price-calculator">
+      <script type="application/json" id="price-calculator-data">{{ pricing | jsonify }}</script>
+      <h3>{{ t.calculator.title }}</h3>
+      <div class="calc-row">
+        <label class="calc-field">
+          <span>{{ t.calculator.size_label }}</span>
+          <select id="calc-size">
+            <option value="kicik">{{ t.calculator.size_kicik }}</option>
+            <option value="orta" selected>{{ t.calculator.size_orta }}</option>
+            <option value="boyuk">{{ t.calculator.size_boyuk }}</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>{{ t.calculator.hours_label }}</span>
+          <input type="number" id="calc-hours" min="1" max="48" value="4" inputmode="numeric">
+        </label>
+      </div>
+      <div class="calc-result" id="calc-result-box">
+        <span class="calc-result-label">{{ t.calculator.result_label }}</span>
+        <span class="calc-result-value" id="calc-result-value">— AZN</span>
+      </div>
+      <p class="calc-note" id="calc-note" data-over-limit="{{ t.calculator.over_limit }}"></p>
+    </div>
+
     <!-- Ticarət Mərkəzləri tarifi -->
     <div class="pricing-panel is-active" data-panel="mall">
       <p class="pricing-block-sublabel">{{ pricing.mall.sublabel }}</p>

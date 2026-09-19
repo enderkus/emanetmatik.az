@@ -1,5 +1,7 @@
 {% assign t = site.data.i18n[page.lang] %}
 {% assign locs = site.data.locations[page.lang] %}
+{% assign home_url = '/' | relative_url %}
+{% if page.lang == 'en' %}{% assign home_url = '/en/' | relative_url %}{% endif %}
 <footer class="site-footer" id="elaqe">
   <div class="container footer-top">
     <div class="footer-col footer-brand">
@@ -21,10 +23,10 @@
     <div class="footer-col">
       <h4>{{ t.footer.quick_links }}</h4>
       <ul>
-        <li><a href="#niye-biz">{{ t.nav.niye_biz }}</a></li>
-        <li><a href="#nece-isleyir">{{ t.nav.nece_isleyir }}</a></li>
-        <li><a href="#qiymetler">{{ t.nav.qiymetler }}</a></li>
-        <li><a href="#sss">{{ t.nav.sss }}</a></li>
+        <li><a href="{{ home_url }}#niye-biz">{{ t.nav.niye_biz }}</a></li>
+        <li><a href="{{ home_url }}#nece-isleyir">{{ t.nav.nece_isleyir }}</a></li>
+        <li><a href="{{ home_url }}#qiymetler">{{ t.nav.qiymetler }}</a></li>
+        <li><a href="{{ home_url }}#sss">{{ t.nav.sss }}</a></li>
       </ul>
     </div>
 
@@ -32,7 +34,7 @@
       <h4>{{ t.footer.locations_title }}</h4>
       <ul>
         {% for loc in locs %}
-        <li><a href="#lokasiyalar">{{ loc.name }}</a></li>
+        <li><a href="{{ home_url }}#lokasiyalar">{{ loc.name }}</a></li>
         {% endfor %}
       </ul>
     </div>
@@ -63,6 +65,10 @@
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
       <p>&copy; {{ 'now' | date: "%Y" }} {{ site.company.name }}. {{ t.footer.rights }}</p>
+      <div class="footer-legal-links">
+        <a href="{{ t.footer.privacy_url | relative_url }}">{{ t.footer.privacy_link }}</a>
+        <a href="{{ t.footer.terms_url | relative_url }}">{{ t.footer.terms_link }}</a>
+      </div>
     </div>
   </div>
 </footer>
