@@ -1,0 +1,256 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% assign locs = site.data.locations[page.lang] %}
+{% assign pricing = site.data.pricing[page.lang] %}
+{% assign faqs = site.data.faq[page.lang] %}
+
+<div id="top"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ t.hero.eyebrow }}</p>
+      <h1>{{ t.hero.title_before }}<span class="text-accent">{{ t.hero.title_accent }}</span>{{ t.hero.title_after }}</h1>
+      <p class="hero-lead">{{ t.hero.lead }}</p>
+      <div class="hero-actions">
+        <a href="#lokasiyalar" class="btn btn-primary btn-lg">{{ t.hero.cta_primary }}</a>
+        <a href="#nece-isleyir" class="btn btn-outline btn-lg">{{ t.hero.cta_secondary }}</a>
+      </div>
+      <ul class="hero-trust">
+        <li><strong>5</strong><span>{{ t.hero.trust_locations }}</span></li>
+        <li><strong>7/24</strong><span>{{ t.hero.trust_video }}</span></li>
+        <li><strong>100%</strong><span>{{ t.hero.trust_security }}</span></li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo-frame" id="hero-slideshow">
+        {% assign hero_photos = "lockers/locker-indoor.jpg|lockers/locker-indoor2.jpeg|lockers/locker-outdoor.jpg" | split: "|" %}
+        {% for photo in hero_photos %}
+        <img src="{{ '/assets/img/' | append: photo | relative_url }}" alt="{{ t.hero.photo_alt }}" class="hero-photo{% if forloop.first %} is-active{% endif %}">
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NIYE BIZ -->
+<section class="section" id="niye-biz">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ t.why_us.eyebrow }}</p>
+      <h2>{{ t.why_us.title }}</h2>
+      <p class="section-lead">{{ t.why_us.lead }}</p>
+    </div>
+
+    <div class="feature-grid">
+      {% assign feature_svgs = "<path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/>|<path d='M13 2 3 14h7l-1 8 10-12h-7l1-8z'/>|<rect x='2' y='5' width='20' height='14' rx='2'/><path d='M2 10h20'/>|<path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3'/>" | split: "|" %}
+      {% for feature in t.why_us.features %}
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">{{ feature_svgs[forloop.index0] }}</svg>
+        </div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- NECE ISLEYIR -->
+<section class="section section-alt" id="nece-isleyir">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ t.how_it_works.eyebrow }}</p>
+      <h2>{{ t.how_it_works.title }}</h2>
+    </div>
+
+    <div class="steps-grid">
+      {% for step in t.how_it_works.steps %}
+      <div class="step-card">
+        <span class="step-number">0{{ forloop.index }}</span>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- DOLABLARIMIZ -->
+<section class="section" id="dolablarimiz">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ t.product.eyebrow }}</p>
+      <h2>{{ t.product.title }}</h2>
+      <p class="section-lead">{{ t.product.lead }}</p>
+    </div>
+
+    <div class="showcase-grid">
+      {% assign showcase_photos = "lockers/locker-indoor.jpg|lockers/locker-outdoor.jpg" | split: "|" %}
+      {% for card in t.product.cards %}
+      <div class="showcase-card">
+        <div class="showcase-image">
+          <img src="{{ '/assets/img/' | append: showcase_photos[forloop.index0] | relative_url }}" alt="{{ card.title }}" loading="lazy">
+        </div>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- LOKASIYALAR -->
+<section class="section section-alt" id="lokasiyalar">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ t.locations.eyebrow }}</p>
+      <h2>{{ t.locations.title }}</h2>
+      <p class="section-lead">{{ t.locations.lead }}</p>
+    </div>
+
+    <div class="location-grid">
+      {% for loc in locs %}
+      <div class="location-card">
+        <div class="location-card-image">
+          <img src="{{ '/assets/img/locations/' | append: loc.id | append: '.jpg' | relative_url }}" alt="{{ loc.name }}" loading="lazy">
+          <span class="badge location-card-badge">{{ loc.lockers }} {{ t.locations.lockers_suffix }}</span>
+        </div>
+        <div class="location-card-body">
+        <div class="location-card-top">
+          <h3>{{ loc.name }}</h3>
+        </div>
+        <ul class="location-meta">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {{ loc.address }} &middot; {{ loc.floor }}
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            {{ t.locations.hours_prefix }} {{ loc.hours }}
+          </li>
+        </ul>
+        <a href="{{ loc.map_url }}" target="_blank" rel="noopener" class="location-link">
+          {{ t.locations.map_link }}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- QIYMETLER -->
+<section class="section" id="qiymetler">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ t.pricing.eyebrow }}</p>
+      <h2>{{ t.pricing.title }}</h2>
+      <p class="section-lead">{{ t.pricing.lead }}</p>
+    </div>
+
+    <div class="pricing-tabs" role="tablist">
+      <button type="button" class="pricing-tab is-active" data-target="mall" role="tab" aria-selected="true">{{ pricing.mall.label }}</button>
+      <button type="button" class="pricing-tab" data-target="icherisheher" role="tab" aria-selected="false">{{ pricing.icherisheher.label }}</button>
+    </div>
+
+    <!-- Ticarət Mərkəzləri tarifi -->
+    <div class="pricing-panel is-active" data-panel="mall">
+      <p class="pricing-block-sublabel">{{ pricing.mall.sublabel }}</p>
+
+      <div class="pricing-grid">
+        {% for plan in pricing.mall.plans %}
+        <div class="price-card">
+          <h3>{{ plan.name }}</h3>
+          <p class="price-size">{{ plan.size }}</p>
+          <ul class="price-tiers">
+            {% for tier in pricing.mall.tiers %}
+            <li><span>{{ tier }}</span><strong>{{ plan.prices[forloop.index0] }} AZN</strong></li>
+            {% endfor %}
+          </ul>
+          <a href="#lokasiyalar" class="btn btn-outline btn-block">{{ t.pricing.cta_button }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Icerisheher tarifi -->
+    <div class="pricing-panel" data-panel="icherisheher">
+      <p class="pricing-block-sublabel">{{ pricing.icherisheher.sublabel }}</p>
+
+      <div class="pricing-grid">
+        {% for plan in pricing.icherisheher.plans %}
+        <div class="price-card">
+          <h3>{{ plan.name }}</h3>
+          <p class="price-size">{{ plan.size }}</p>
+          <div class="price-amount">
+            <span class="price-value">{{ plan.base_price }}</span>
+            <span class="price-unit">AZN</span>
+          </div>
+          <p class="price-window">{{ t.pricing.price_window_prefix }}{{ plan.base_hours }} {{ t.pricing.price_window_suffix }}</p>
+          <p class="price-daily">{{ t.pricing.extra_daily_prefix }} {{ pricing.icherisheher.extra_block_hours }} {{ t.pricing.extra_daily_suffix }} <strong>{{ pricing.icherisheher.extra_block_price }} AZN</strong></p>
+          <p class="price-desc">{{ plan.desc }}</p>
+          <ul class="price-features">
+            {% for f in plan.features %}
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              {{ f }}
+            </li>
+            {% endfor %}
+          </ul>
+          <a href="#lokasiyalar" class="btn btn-outline btn-block">{{ t.pricing.cta_button }}</a>
+        </div>
+        {% endfor %}
+      </div>
+      <p class="pricing-note-inline">{{ pricing.icherisheher.extra_hour_note }}</p>
+    </div>
+
+    <div class="pricing-footnote">
+      <p class="payment-methods">
+        {% for m in pricing.payment_methods %}<span>{{ m }}</span>{% endfor %}
+      </p>
+      <p class="pricing-note">{{ pricing.note }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- SSS -->
+<section class="section section-alt" id="sss">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ t.faq.eyebrow }}</p>
+      <h2>{{ t.faq.title }}</h2>
+    </div>
+
+    <div class="accordion">
+      {% for item in faqs %}
+      <div class="accordion-item">
+        <button class="accordion-trigger" type="button">
+          <span>{{ item.q }}</span>
+          <svg class="accordion-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel">
+          <p>{{ item.a }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ELAQE CTA -->
+<section class="section cta-section" id="cta">
+  <div class="container cta-inner">
+    <div>
+      <h2>{{ t.cta.title }}</h2>
+      <p>{{ t.cta.lead }}</p>
+    </div>
+    <div class="cta-actions">
+      <a href="tel:{{ site.company.phone_link }}" class="btn btn-light btn-lg">{{ site.company.phone }}</a>
+      <a href="https://wa.me/{{ site.company.whatsapp }}" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg">{{ t.cta.whatsapp }}</a>
+    </div>
+  </div>
+</section>

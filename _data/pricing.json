@@ -1,0 +1,107 @@
+{
+  "az": {
+    "note": "Qeyd: Ticarət mərkəzləri və İçərişəhər üçün tariflər fərqlidir.",
+    "payment_methods": ["Nağd ödəniş", "Bank kartı", "Kontaktsız ödəniş"],
+
+    "mall": {
+      "label": "Ticarət Mərkəzləri",
+      "sublabel": "Crescent Mall, Deniz Mall, 28 Mall və Gənclik Mall",
+      "tiers": ["0–4 saat", "4–8 saat", "8–12 saat"],
+      "plans": [
+        { "id": "kicik", "name": "Kiçik Dolab", "size": "30 × 30 × 40 sm", "prices": [2, 4, 6] },
+        { "id": "orta", "name": "Orta Dolab", "size": "40 × 40 × 50 sm", "prices": [3, 5, 7] },
+        { "id": "boyuk", "name": "Böyük Dolab", "size": "50 × 50 × 70 sm", "prices": [4, 6, 8] }
+      ]
+    },
+
+    "icherisheher": {
+      "label": "İçərişəhər",
+      "sublabel": "İçərişəhər (Qala) ərazisi",
+      "extra_block_hours": 3,
+      "extra_block_price": 3,
+      "extra_hour_note": "Hər əlavə 3 saat üçün 3 AZN tutulur.",
+      "plans": [
+        {
+          "id": "kicik",
+          "name": "Kiçik Dolab",
+          "size": "30 × 30 × 40 sm",
+          "desc": "Bel çantası, alış-veriş paketləri və kiçik əşyalar üçün ideal.",
+          "base_hours": 1,
+          "base_price": 1,
+          "features": ["Bel çantası ölçüsündə əşyalar", "Alış-veriş paketləri", "Kitab, gözlük, sənəd qovluğu"]
+        },
+        {
+          "id": "orta",
+          "name": "Orta Dolab",
+          "size": "40 × 40 × 50 sm",
+          "desc": "Sırt çantası və orta ölçülü çantalar üçün əlverişli variant.",
+          "base_hours": 3,
+          "base_price": 3,
+          "features": ["Sırt çantası, məktəb çantası", "Alış-veriş üçün bir neçə paket", "Gündəlik istifadə üçün əlverişli"]
+        },
+        {
+          "id": "boyuk",
+          "name": "Böyük Dolab",
+          "size": "50 × 50 × 70 sm",
+          "desc": "Səyahət bavulu və iri həcmli əşyalar üçün geniş dolab.",
+          "base_hours": 3,
+          "base_price": 4,
+          "features": ["Səyahət bavulu", "İri idman çantaları", "Bir neçə paket birlikdə"]
+        }
+      ]
+    }
+  },
+
+  "en": {
+    "note": "Note: Rates differ for shopping malls and the Old City (İçərişəhər).",
+    "payment_methods": ["Cash", "Card", "Contactless payment"],
+
+    "mall": {
+      "label": "Shopping Malls",
+      "sublabel": "Crescent Mall, Deniz Mall, 28 Mall and Gənclik Mall",
+      "tiers": ["0–4 hours", "4–8 hours", "8–12 hours"],
+      "plans": [
+        { "id": "kicik", "name": "Small Locker", "size": "30 × 30 × 40 cm", "prices": [2, 4, 6] },
+        { "id": "orta", "name": "Medium Locker", "size": "40 × 40 × 50 cm", "prices": [3, 5, 7] },
+        { "id": "boyuk", "name": "Large Locker", "size": "50 × 50 × 70 cm", "prices": [4, 6, 8] }
+      ]
+    },
+
+    "icherisheher": {
+      "label": "Old City (İçərişəhər)",
+      "sublabel": "İçərişəhər (Old City) area",
+      "extra_block_hours": 3,
+      "extra_block_price": 3,
+      "extra_hour_note": "Every additional 3 hours costs 3 AZN.",
+      "plans": [
+        {
+          "id": "kicik",
+          "name": "Small Locker",
+          "size": "30 × 30 × 40 cm",
+          "desc": "Ideal for a waist bag, shopping bags, and small items.",
+          "base_hours": 1,
+          "base_price": 1,
+          "features": ["Waist-bag sized items", "Shopping bags", "Book, glasses, document folder"]
+        },
+        {
+          "id": "orta",
+          "name": "Medium Locker",
+          "size": "40 × 40 × 50 cm",
+          "desc": "A convenient option for a backpack and medium-sized bags.",
+          "base_hours": 3,
+          "base_price": 3,
+          "features": ["Backpack, school bag", "Several shopping bags", "Convenient for everyday use"]
+        },
+        {
+          "id": "boyuk",
+          "name": "Large Locker",
+          "size": "50 × 50 × 70 cm",
+          "desc": "A spacious locker for travel suitcases and large items.",
+          "base_hours": 3,
+          "base_price": 4,
+          "features": ["Travel suitcase", "Large sports bags", "Several bags together"]
+        }
+      ]
+    }
+  }
+}

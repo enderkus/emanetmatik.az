@@ -1,0 +1,35 @@
+{% assign t = site.data.i18n[page.lang] %}
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="{{ '/' | relative_url }}#top" class="brand">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.company.name }}" class="brand-logo">
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#niye-biz" class="nav-link">{{ t.nav.niye_biz }}</a></li>
+        <li><a href="#nece-isleyir" class="nav-link">{{ t.nav.nece_isleyir }}</a></li>
+        <li><a href="#lokasiyalar" class="nav-link">{{ t.nav.lokasiyalar }}</a></li>
+        <li><a href="#qiymetler" class="nav-link">{{ t.nav.qiymetler }}</a></li>
+        <li><a href="#sss" class="nav-link">{{ t.nav.sss }}</a></li>
+        <li><a href="#elaqe" class="nav-link">{{ t.nav.elaqe }}</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:{{ site.company.phone_link }}" class="phone-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>{{ site.company.phone }}</span>
+      </a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a href="{{ '/' | relative_url }}" class="lang-btn{% if page.lang == 'az' %} is-active{% endif %}">AZ</a>
+        <a href="{{ '/en/' | relative_url }}" class="lang-btn{% if page.lang == 'en' %} is-active{% endif %}">EN</a>
+      </div>
+      <a href="#lokasiyalar" class="btn btn-primary btn-sm">{{ t.nav.lokasiyalar }}</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="{{ t.misc.nav_toggle_label }}" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,195 @@
+az:
+  nav:
+    niye_biz: "Niyə Biz?"
+    nece_isleyir: "Necə İşləyir"
+    lokasiyalar: "Lokasiyalar"
+    qiymetler: "Qiymətlər"
+    sss: "SSS"
+    elaqe: "Əlaqə"
+
+  misc:
+    nav_toggle_label: "Menyunu aç/bağla"
+    whatsapp_float_label: "WhatsApp ilə yazın"
+
+  hero:
+    eyebrow: "Bakının etibarlı əmanət dolabı şəbəkəsi"
+    title_before: "Əşyalarını "
+    title_accent: "Etibarlı Əllərə"
+    title_after: " Tapşır"
+    lead: "Crescent Mall, Deniz Mall, 28 Mall, Gənclik Mall və İçərişəhərdə ağıllı əmanət dolabları ilə əşyalarınız hər an nəzarət altındadır. Sürətli, sadə və şəffaf qiymətlərlə."
+    cta_primary: "Lokasiyalara Bax"
+    cta_secondary: "Necə İşləyir?"
+    trust_locations: "Lokasiya"
+    trust_video: "Video Nəzarət"
+    trust_security: "Təhlükəsizlik"
+    photo_alt: "Emanetmatik əmanət dolabları"
+
+  why_us:
+    eyebrow: "Niyə Emanetmatik?"
+    title: "Rahatlığı və Təhlükəsizliyi Bir Arada Yaşayın"
+    lead: "Alış-verişdən, gəzintidən və ya səyahətdən əlinizi-qolunuzu boşaldın — qalanını biz düşünürük."
+    features:
+      - title: "Tam Təhlükəsizlik"
+        desc: "24/7 video nəzarət və möhkəm konstruksiyalı dolablar əşyalarınızı qoruyur."
+      - title: "Sürətli və Asan"
+        desc: "Bir neçə toxunuşla dolabınızı kirayələyin — açar və ya qeydiyyat lazım deyil."
+      - title: "Şəffaf Qiymətlər"
+        desc: "Gizli ödəniş yoxdur. Saatlıq və günlük tariflərlə sadə hesablama."
+      - title: "Mərkəzi Yerləşmə"
+        desc: "Bakının ən çox ziyarət edilən ticarət mərkəzlərində, əlçatan nöqtələrdə."
+
+  how_it_works:
+    eyebrow: "Necə İşləyir"
+    title: "4 Sadə Addımda Əmanətinizi Saxlayın"
+    steps:
+      - title: "Dolab Seçin"
+        desc: "Ehtiyacınıza uyğun ölçüdə — kiçik, orta və ya böyük — dolab seçin."
+      - title: "Ödənişi Edin"
+        desc: "Terminalda nağd, kart və ya kontaktsız ödəniş ilə haqqını ödəyin."
+      - title: "Kodunuzu Alın"
+        desc: "Ekranda və ya SMS ilə göndərilən şəxsi kodunuzu qeyd edin."
+      - title: "Rahat Gəzin"
+        desc: "Əşyanızı yerləşdirib dolabı bağlayın, istədiyiniz vaxt qayıdıb kodla açın."
+
+  product:
+    eyebrow: "Məhsulumuz"
+    title: "Hər Məkana Uyğun Dolablar"
+    lead: "İstər ticarət mərkəzinin içində, istərsə də açıq tarixi məkanlarda — Emanetmatik dolabları hər mühitə uyğunlaşır."
+    cards:
+      - title: "Ticarət Mərkəzləri Üçün"
+        desc: "Crescent Mall, Deniz Mall, 28 Mall və Gənclik Mall-da interyerə uyğun, canlı narıncı dizaynlı dolab bloklarımız sizi qarşılayır."
+      - title: "Açıq Tarixi Məkanlar Üçün"
+        desc: "İçərişəhər kimi açıq hava zonalarında davamlı konstruksiyalı, mühitə uyğun tünd rəngli dolab modellərimiz istifadə olunur."
+
+  locations:
+    eyebrow: "Lokasiyalarımız"
+    title: "Bakının 5 Populyar Lokasiyasında"
+    lead: "Sizə ən yaxın Emanetmatik məntəqəsini seçin."
+    lockers_suffix: "dolab"
+    hours_prefix: "Hər gün"
+    map_link: "Xəritədə göstər"
+
+  pricing:
+    eyebrow: "Qiymətlər"
+    title: "Ehtiyacınıza Uyğun Sadə Tariflər"
+    lead: "Ticarət mərkəzləri və İçərişəhər üçün fərqli tariflərimizlə tanış olun."
+    cta_button: "Lokasiya Seç"
+    price_window_prefix: "0 – "
+    price_window_suffix: "saat üçün"
+    extra_daily_prefix: "Sonra hər"
+    extra_daily_suffix: "saat:"
+
+  faq:
+    eyebrow: "Tez-tez Verilən Suallar"
+    title: "Sualınız Var? Cavabı Burada"
+
+  cta:
+    title: "Sualınız var və ya kömək lazımdır?"
+    lead: "Komandamız istənilən sualınıza cavab verməyə hazırdır — zəng edin və ya WhatsApp-dan yazın."
+    whatsapp: "WhatsApp"
+
+  footer:
+    tagline: "Bakının populyar ticarət mərkəzlərində ağıllı əmanət dolabları ilə əşyalarınız təhlükəsiz əllərdədir."
+    quick_links: "Sürətli Keçidlər"
+    locations_title: "Lokasiyalarımız"
+    contact_title: "Əlaqə"
+    address: "Bakı, Azərbaycan"
+    rights: "Bütün hüquqlar qorunur."
+
+en:
+  nav:
+    niye_biz: "Why Us?"
+    nece_isleyir: "How It Works"
+    lokasiyalar: "Locations"
+    qiymetler: "Pricing"
+    sss: "FAQ"
+    elaqe: "Contact"
+
+  misc:
+    nav_toggle_label: "Toggle menu"
+    whatsapp_float_label: "Message us on WhatsApp"
+
+  hero:
+    eyebrow: "Baku's trusted luggage locker network"
+    title_before: "Hand Over Your Belongings "
+    title_accent: "With Confidence"
+    title_after: ""
+    lead: "With smart luggage lockers at Crescent Mall, Deniz Mall, 28 Mall, Gənclik Mall and the Old City (İçərişəhər), your belongings are always under control. Fast, simple, and with transparent pricing."
+    cta_primary: "View Locations"
+    cta_secondary: "How It Works?"
+    trust_locations: "Locations"
+    trust_video: "Video Monitoring"
+    trust_security: "Security"
+    photo_alt: "Emanetmatik luggage lockers"
+
+  why_us:
+    eyebrow: "Why Emanetmatik?"
+    title: "Enjoy Comfort and Security Together"
+    lead: "Free up your hands while shopping, sightseeing, or traveling — we'll take care of the rest."
+    features:
+      - title: "Complete Security"
+        desc: "24/7 video monitoring and sturdy construction keep your belongings safe."
+      - title: "Fast and Easy"
+        desc: "Rent your locker in a few taps — no key or registration needed."
+      - title: "Transparent Pricing"
+        desc: "No hidden fees. Simple calculation with hourly and daily rates."
+      - title: "Central Locations"
+        desc: "In Baku's most visited shopping malls, at accessible points."
+
+  how_it_works:
+    eyebrow: "How It Works"
+    title: "Store Your Belongings in 4 Simple Steps"
+    steps:
+      - title: "Choose a Locker"
+        desc: "Pick the size that suits your needs — small, medium, or large."
+      - title: "Make Payment"
+        desc: "Pay at the terminal with cash, card, or contactless payment."
+      - title: "Get Your Code"
+        desc: "Note down the personal code shown on screen or sent by SMS."
+      - title: "Go Enjoy Yourself"
+        desc: "Place your belongings, close the locker, and come back anytime to open it with your code."
+
+  product:
+    eyebrow: "Our Product"
+    title: "Lockers Suited to Every Location"
+    lead: "Whether inside a shopping mall or in an open historic setting — Emanetmatik lockers adapt to every environment."
+    cards:
+      - title: "For Shopping Malls"
+        desc: "At Crescent Mall, Deniz Mall, 28 Mall and Gənclik Mall, our vibrant orange locker blocks blend right into the interior."
+      - title: "For Open Historic Sites"
+        desc: "In open-air areas like the Old City (İçərişəhər), we use durable, dark-toned locker models suited to the surroundings."
+
+  locations:
+    eyebrow: "Our Locations"
+    title: "At 5 Popular Locations in Baku"
+    lead: "Choose the Emanetmatik point closest to you."
+    lockers_suffix: "lockers"
+    hours_prefix: "Daily"
+    map_link: "View on map"
+
+  pricing:
+    eyebrow: "Pricing"
+    title: "Simple Rates for Your Needs"
+    lead: "Get to know our different rates for shopping malls and the Old City (İçərişəhər)."
+    cta_button: "Choose Location"
+    price_window_prefix: "For 0–"
+    price_window_suffix: "hours"
+    extra_daily_prefix: "After that, every"
+    extra_daily_suffix: "hours:"
+
+  faq:
+    eyebrow: "Frequently Asked Questions"
+    title: "Have a Question? Find the Answer Here"
+
+  cta:
+    title: "Have a question or need help?"
+    lead: "Our team is ready to answer any question — call us or message us on WhatsApp."
+    whatsapp: "WhatsApp"
+
+  footer:
+    tagline: "With smart luggage lockers at Baku's popular shopping malls, your belongings are in safe hands."
+    quick_links: "Quick Links"
+    locations_title: "Our Locations"
+    contact_title: "Contact"
+    address: "Baku, Azerbaijan"
+    rights: "All rights reserved."

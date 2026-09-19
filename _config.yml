@@ -1,0 +1,44 @@
+title: Emanetmatik.az
+description: >-
+  Bakının populyar ticarət mərkəzlərində ağıllı əmanət dolabları.
+  Əşyalarınızı təhlükəsiz, sürətli və sərfəli şəkildə saxlayın.
+lang: az
+locale: az_AZ
+url: "https://emanetmatik.az"
+baseurl: ""
+
+company:
+  name: Emanetmatik
+  legal_name: "Emanetmatik MMC"
+  phone: "+994 10 465 43 35"
+  phone_link: "+994104654335"
+  whatsapp: "905494727727"
+  whatsapp_display: "+90 549 472 77 27"
+  email: "info@emanetmatik.az"
+  instagram: "https://www.instagram.com/emanetmatik.az"
+  tiktok: "https://www.tiktok.com/@emanetmatik.az"
+  address: "Bakı, Azərbaycan"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+  - logo.png
+  - logo-white.png
+  - foto1.png
+  - foto-2.jpeg
+  - pop-up.jpeg
+  - mall

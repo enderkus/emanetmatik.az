@@ -1,0 +1,68 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% assign locs = site.data.locations[page.lang] %}
+<footer class="site-footer" id="elaqe">
+  <div class="container footer-top">
+    <div class="footer-col footer-brand">
+      <img src="{{ '/assets/img/logo-white.png' | relative_url }}" alt="{{ site.company.name }}" class="footer-logo">
+      <p>{{ t.footer.tagline }}</p>
+      <div class="social-links">
+        <a href="{{ site.company.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="{{ site.company.tiktok }}" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.13-2.93h-3.02v14.19c0 1.5-1.22 2.72-2.72 2.72a2.72 2.72 0 0 1 0-5.44c.25 0 .5.03.73.1V11.4a5.76 5.76 0 0 0-.73-.05A5.77 5.77 0 0 0 4 17.13 5.77 5.77 0 0 0 9.73 22.9a5.77 5.77 0 0 0 5.77-5.77V9.4a7.24 7.24 0 0 0 4.22 1.35V7.73a4.27 4.27 0 0 1-3.12-1.91z"/></svg>
+        </a>
+        <a href="https://wa.me/{{ site.company.whatsapp }}" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4.02 8.37 4.02 15c0 2.36.62 4.58 1.79 6.53L3 29l7.65-2.75A11.9 11.9 0 0 0 16.02 27C22.65 27 28 21.63 28 15S22.65 3 16.02 3z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>{{ t.footer.quick_links }}</h4>
+      <ul>
+        <li><a href="#niye-biz">{{ t.nav.niye_biz }}</a></li>
+        <li><a href="#nece-isleyir">{{ t.nav.nece_isleyir }}</a></li>
+        <li><a href="#qiymetler">{{ t.nav.qiymetler }}</a></li>
+        <li><a href="#sss">{{ t.nav.sss }}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>{{ t.footer.locations_title }}</h4>
+      <ul>
+        {% for loc in locs %}
+        <li><a href="#lokasiyalar">{{ loc.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>{{ t.footer.contact_title }}</h4>
+      <ul class="footer-contact">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:{{ site.company.phone_link }}">{{ site.company.phone }}</a>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 3C9.4 3 4.02 8.37 4.02 15c0 2.36.62 4.58 1.79 6.53L3 29l7.65-2.75A11.9 11.9 0 0 0 16.02 27C22.65 27 28 21.63 28 15S22.65 3 16.02 3z"/></svg>
+          <a href="https://wa.me/{{ site.company.whatsapp }}" target="_blank" rel="noopener">{{ site.company.whatsapp_display }}</a>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>{{ t.footer.address }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.company.name }}. {{ t.footer.rights }}</p>
+    </div>
+  </div>
+</footer>
