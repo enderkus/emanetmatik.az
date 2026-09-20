@@ -317,14 +317,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 /* Hero locker photo */
 .hero-visual {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .hero-photo-frame {
   position: relative;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
-  transform: rotate(-1.5deg);
   border: 6px solid #fff;
   max-width: 480px;
   width: 100%;

@@ -1,54 +1,54 @@
 {
   "az": [
     {
-      "q": "Dolabımdan neçə müddət istifadə edə bilərəm?",
-      "a": "Müddət lokasiyaya görə dəyişir: ticarət mərkəzlərində 4 saatlıq mərhələlərlə (0–4, 4–8, 8–12 saat), İçərişəhərdə isə ilk müddətdən sonra hər əlavə 3 saat üçün əlavə haqqla hesablanır. Ətraflı tariflər 'Qiymətlər' bölməsindədir. İstədiyiniz an geri qayıdıb əşyanızı ala bilərsiniz."
+      "q": "Dolabımdan nə qədər müddət istifadə edə bilərəm?",
+      "a": "Müddət lokasiyaya görə dəyişir: ticarət mərkəzlərində 4 saatlıq mərhələlərlə (0–4, 4–8, 8–12 saat), İçərişəhərdə isə ilk saatdan sonra hər əlavə 3 saat üçün əlavə 3 manat hesablanır. Ətraflı tariflər \"Qiymətlər\" bölməsindədir. İstədiyiniz vaxt geri dönüb əşyanızı ala bilərsiniz."
     },
     {
       "q": "Ödənişi necə edə bilərəm?",
-      "a": "Bütün lokasiyalarımızda nağd ödəniş, bank kartı və kontaktsız ödəniş imkanları mövcuddur. Ödəniş dolab terminalında bir neçə saniyə çəkir."
+      "a": "Bütün lokasiyalarımızda bank kartı və kontaktsız ödəniş imkanları mövcuddur. Ödəniş dolabın POS terminalında bir neçə saniyə çəkir, zəhmət olmasa bilet çap olunanadək gözləyin."
     },
     {
-      "q": "Kodumu itirsəm və ya unutsam nə etməliyəm?",
-      "a": "Narahat olmayın — lokasiyadakı əməkdaşımızla əlaqə saxlayın və ya dəstək xəttimizə zəng edin. Kimliyinizi təsdiqlədikdən sonra dolabınız açılacaq."
+      "q": "Biletimi itirsəm və ya unutsam nə etməliyəm?",
+      "a": "Narahat olmayın — məntəqədəki çağrı mərkəzi vasitəsilə əməkdaşımızla əlaqə saxlayın. Kimliyiniz təsdiqləndikdən və əlavə 10 manat ödəniş olunduqdan sonra dolabınız açılacaq."
     },
     {
       "q": "Əşyalarım nə dərəcədə təhlükəsizdir?",
-      "a": "Bütün dolab bölmələri 24/7 video nəzarət altındadır və möhkəm metal konstruksiyaya malikdir. Hər dolab yalnız sizin təyin etdiyiniz kod ilə açılır."
+      "a": "Bütün dolablar 24/7 video nəzarət altındadır və strukturlaşdırılmış metal konstruksiyaya malikdir. Hər dolab yalnız sizə təyin olunan biletin üzərindəki QR kod ilə açılır."
     },
     {
       "q": "Hansı əşyaları dolabda saxlaya bilmərəm?",
-      "a": "Nağd pul, qiymətli sənədlər, tez xarab olan qida məhsulları, alışqan, partlayıcı və ya qadağan olunmuş maddələr dolablarda saxlanıla bilməz."
+      "a": "Tez xarab olan qida məhsulları, partlayıcı və ya qadağan olunmuş maddələr dolablarda saxlanıla bilməz. Xahiş edirik dolablardan istifadə zamanı təmizliyə riayət edin."
     },
     {
       "q": "Dolab ölçüləri necə seçilir?",
-      "a": "Terminal ekranında üç ölçü (kiçik, orta, böyük) arasından ehtiyacınıza uyğun olanı seçə bilərsiniz. Ölçülər və qiymətlər 'Qiymətlər' bölməsində göstərilib."
+      "a": "Dolabın monitor ekranında üç ölçü (kiçik, orta, böyük) arasından ehtiyacınıza uyğun olanı seçə bilərsiniz. Ölçülər və qiymətlər \"Qiymətlər\" bölməsində göstərilib."
     }
   ],
   "en": [
     {
       "q": "How long can I use a locker?",
-      "a": "Duration depends on the location: shopping malls are billed in 4-hour tiers (0–4, 4–8, 8–12 hours), while the Old City (İçərişəhər) charges an additional fee for every extra 3 hours after the initial period. See the 'Pricing' section for full details. You can come back and collect your belongings at any time."
+      "a": "Duration depends on the location: shopping malls are billed in 4-hour tiers (0–4, 4–8, 8–12 hours), while the Old City (İçərişəhər) charges an additional 3 AZN for every extra 3 hours after the first hour. See the 'Pricing' section for full details. You can come back and collect your belongings at any time."
     },
     {
       "q": "How can I pay?",
-      "a": "Cash, bank card, and contactless payment are all available at every location. Payment at the locker terminal takes just a few seconds."
+      "a": "Bank card and contactless payment are available at all our locations. Payment at the locker's POS terminal takes just a few seconds — please wait until your ticket is printed."
     },
     {
-      "q": "What if I lose or forget my code?",
-      "a": "Don't worry — contact our on-site staff or call our support line. Your locker will be opened once your identity is confirmed."
+      "q": "What if I lose or forget my ticket?",
+      "a": "Don't worry — contact our staff through the call center at the location. Your locker will be opened once your identity is confirmed and an additional 10 AZN fee is paid."
     },
     {
       "q": "How secure are my belongings?",
-      "a": "Every locker unit is under 24/7 video monitoring and built with sturdy metal construction. Each locker only opens with the code you set."
+      "a": "Every locker is under 24/7 video monitoring and built with structured metal construction. Each locker only opens with the QR code on the ticket assigned to you."
     },
     {
       "q": "What items can't I store in a locker?",
-      "a": "Cash, valuable documents, perishable food, flammable, explosive, or otherwise prohibited items cannot be stored in the lockers."
+      "a": "Perishable food, explosive, or otherwise prohibited items cannot be stored in the lockers. Please keep the lockers clean while using them."
     },
     {
       "q": "How do I choose a locker size?",
-      "a": "On the terminal screen, you can choose the size that suits your needs from three options (small, medium, large). Sizes and prices are shown in the 'Pricing' section."
+      "a": "On the locker's monitor screen, you can choose the size that suits your needs from three options (small, medium, large). Sizes and prices are shown in the 'Pricing' section."
     }
   ]
 }

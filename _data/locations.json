@@ -12,11 +12,11 @@
     },
     {
       "id": "deniz-mall",
-      "name": "Deniz Mall",
+      "name": "Dəniz Mall",
       "city": "Bakı",
-      "address": "Deniz Mall Ticarət Mərkəzi",
-      "floor": "Giriş holu",
-      "hours": "10:00 – 22:00",
+      "address": "Dəniz Mall Ticarət Mərkəzi",
+      "floor": "Mənfi 1-ci mərtəbə",
+      "hours": "10:00 – 01:30",
       "lockers": 31,
       "map_url": "https://maps.google.com/?q=Deniz+Mall+Baku"
     },
@@ -25,8 +25,8 @@
       "name": "28 Mall",
       "city": "Bakı",
       "address": "28 Mall Ticarət Mərkəzi",
-      "floor": "1-ci mərtəbə",
-      "hours": "10:00 – 22:00",
+      "floor": "Mənfi 2-ci mərtəbə",
+      "hours": "10:00 – 01:30",
       "lockers": 32,
       "map_url": "https://maps.google.com/?q=28+Mall+Baku"
     },
@@ -35,8 +35,8 @@
       "name": "Gənclik Mall",
       "city": "Bakı",
       "address": "Gənclik Mall Ticarət Mərkəzi",
-      "floor": "1-ci mərtəbə, əsas giriş",
-      "hours": "10:00 – 22:00",
+      "floor": "Mənfi 1-ci mərtəbə",
+      "hours": "10:00 – 01:30",
       "lockers": 36,
       "map_url": "https://maps.google.com/?q=Genclik+Mall+Baku"
     },
@@ -45,8 +45,8 @@
       "name": "İçərişəhər",
       "city": "Bakı",
       "address": "İçərişəhər (Qala) ərazisi",
-      "floor": "Qoşa Qala Darvazası yaxınlığı",
-      "hours": "10:00 – 22:00",
+      "floor": "Qoşa Qala Qapısı yaxınlığı",
+      "hours": "08:00 – 02:00",
       "lockers": 46,
       "map_url": "https://maps.google.com/?q=Icherisheher+Baku"
     }
@@ -64,11 +64,11 @@
     },
     {
       "id": "deniz-mall",
-      "name": "Deniz Mall",
+      "name": "Dəniz Mall",
       "city": "Baku",
-      "address": "Deniz Mall Shopping Center",
-      "floor": "Entrance hall",
-      "hours": "10:00 AM – 10:00 PM",
+      "address": "Dəniz Mall Shopping Center",
+      "floor": "Basement floor 1",
+      "hours": "10:00 AM – 1:30 AM",
       "lockers": 31,
       "map_url": "https://maps.google.com/?q=Deniz+Mall+Baku"
     },
@@ -77,8 +77,8 @@
       "name": "28 Mall",
       "city": "Baku",
       "address": "28 Mall Shopping Center",
-      "floor": "1st floor",
-      "hours": "10:00 AM – 10:00 PM",
+      "floor": "Basement floor 2",
+      "hours": "10:00 AM – 1:30 AM",
       "lockers": 32,
       "map_url": "https://maps.google.com/?q=28+Mall+Baku"
     },
@@ -87,8 +87,8 @@
       "name": "Gənclik Mall",
       "city": "Baku",
       "address": "Gənclik Mall Shopping Center",
-      "floor": "1st floor, main entrance",
-      "hours": "10:00 AM – 10:00 PM",
+      "floor": "Basement floor 1",
+      "hours": "10:00 AM – 1:30 AM",
       "lockers": 36,
       "map_url": "https://maps.google.com/?q=Genclik+Mall+Baku"
     },
@@ -97,8 +97,8 @@
       "name": "İçərişəhər (Old City)",
       "city": "Baku",
       "address": "İçərişəhər (Old City) area",
-      "floor": "Near the Double Gates (Qoşa Qala)",
-      "hours": "10:00 AM – 10:00 PM",
+      "floor": "Near the Qoşa Qala Gate",
+      "hours": "8:00 AM – 2:00 AM",
       "lockers": 46,
       "map_url": "https://maps.google.com/?q=Icherisheher+Baku"
     }
